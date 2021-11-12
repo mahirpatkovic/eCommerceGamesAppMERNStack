@@ -44,10 +44,10 @@ app.options('*', cors());
 // serving static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use((req, res, next) => {
-    res.locals.nonce = crypto.randomBytes(16).toString('hex');
-    next();
-});
+// app.use((req, res, next) => {
+//     res.locals.nonce = crypto.randomBytes(16).toString('hex');
+//     next();
+// });
 
 app.use(
     contentSecurityPolicy({
@@ -57,6 +57,7 @@ app.use(
             scriptSrc: [
                 "'self'",
                 'https://www.paypal.com/sdk/js?client-id=AWLpbgRI8-6p86MK3M4G3FJnYDBQLYrjvG5KnBHj7LKzL4yWgB0xcgJn5XI4x_SnZ1DnpqZMWNDi131Z&currency=USD',
+                `'nonce-${crypto.randomBytes(16).toString('hex')}'`,
             ],
             fontSrc: ["'self'", 'https://fonts.googleapis.com'],
             objectSrc: ["'none'"],

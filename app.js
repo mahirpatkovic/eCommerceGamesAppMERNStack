@@ -56,8 +56,8 @@ app.use(
             defaultSrc: ["'self'"],
             scriptSrc: [
                 "'self'",
-                'https://www.paypal.com/sdk/js?client-id=AWLpbgRI8-6p86MK3M4G3FJnYDBQLYrjvG5KnBHj7LKzL4yWgB0xcgJn5XI4x_SnZ1DnpqZMWNDi131Z&currency=USD',
-                `'nonce-${crypto.randomBytes(16).toString('hex')}'`,
+                'https://www.paypal.com',
+                // `'nonce-${crypto.randomBytes(16).toString('hex')}'`,
             ],
             fontSrc: ["'self'", 'https://fonts.googleapis.com'],
             objectSrc: ["'none'"],

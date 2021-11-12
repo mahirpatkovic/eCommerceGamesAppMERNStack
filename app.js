@@ -57,6 +57,7 @@ app.use(
             scriptSrc: [
                 "'self'",
                 'https://www.paypal.com',
+                'sha256-9Y44qF+1Rwj+2hgGsDeCkCPIpHrOBnzI31v0UCQYbfc=',
                 // `'nonce-${crypto.randomBytes(16).toString('hex')}'`,
             ],
             fontSrc: ["'self'", 'https://fonts.googleapis.com'],

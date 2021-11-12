@@ -1,0 +1,58 @@
+.footer{
+   width:100%;
+   height:auto;
+   background-color: black;
+   margin-top: -150px;
+}
+
+.contact{
+   margin: 0 auto;
+    width: 70%;
+}
+@media (min-width: 1024px) and (max-width:1500px){
+   .waveDown{
+      margin-top: 70px;  
+   }
+}
+@media (min-width: 1024px) and (max-width:1200px){
+   .contact{
+      margin-top: 50px;
+   }
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+   .waveDown{
+      margin-top: 70px;  
+   }
+   .contact{
+      margin-top: 100px;
+   }
+}
+
+@media (min-width: 540px) and (max-width: 768px){
+   .waveDown{
+      margin-top: 100px;  
+   }
+   .contact{
+      margin-top: 150px;
+   }
+}
+@media(max-width: 540px){
+   .waveDown{
+      margin-top: 230px;  
+   }
+   .contact{
+      margin-top: 150px;
+   }
+}
+
+.logo{
+   width: 60px;
+   float: left;
+}
+
+.logo2{
+   width: 110px;
+   margin-top: 8px;
+   float: right;
+}

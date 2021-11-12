@@ -1,0 +1,43 @@
+@media (min-width: 1630px){
+    .gameItems{
+        margin-top: -450px;
+    }
+}
+@media (min-width:1400px) and (max-width: 1650px){
+    .gameItems{
+        margin-top: -370px;
+    }
+}
+@media (min-width:1200px) and (max-width: 1400px){
+    .gameItems{
+        margin-top: -330px;
+    }
+}
+@media (min-width:1024px) and (max-width: 1200px){
+    .gameItems{
+        margin-top: -300px;
+    }
+}
+@media (min-width:850px) and (max-width: 1024px){
+    .gameItems{
+        margin-top: -250px;
+    }
+}
+@media (min-width:768px) and (max-width: 850px){
+    .gameItems{
+        margin-top: -220px;
+    }
+}
+@media (min-width:470px) and (max-width: 768px){
+    .gameItems{
+        width: 300px;
+        margin: -140px auto;
+    }
+}
+
+@media (max-width:470px){
+    .gameItems{
+        width: 300px;
+        margin: -120px auto;
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "name": "games-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^4.11.4",
+        "@material-ui/icons": "^4.11.2",
+        "@material-ui/lab": "^4.0.0-alpha.58",
+        "@reduxjs/toolkit": "^1.6.0",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^11.2.7",
+        "@testing-library/user-event": "^12.8.3",
+        "antd": "^4.16.6",
+        "antd-img-crop": "^3.16.0",
+        "axios": "^0.21.1",
+        "bootstrap": "^4.6.0",
+        "js-cookie": "^3.0.1",
+        "leva": "^0.9.13",
+        "payment": "^2.4.4",
+        "prettier": "^2.4.1",
+        "react": "^17.0.2",
+        "react-bootstrap": "^1.6.1",
+        "react-credit-card-input": "^1.1.5",
+        "react-credit-cards": "^0.8.3",
+        "react-dom": "^17.0.2",
+        "react-hook-form": "^7.9.0",
+        "react-redux": "^7.2.4",
+        "react-responsive": "^8.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "react-select-country-list": "^2.2.3",
+        "react-semantic-ui-datepickers": "^2.13.2",
+        "react-spring": "^9.2.3",
+        "semantic-ui-css": "^2.4.1",
+        "semantic-ui-react": "^2.0.3",
+        "styled-components": "^5.3.0",
+        "web-vitals": "^1.1.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

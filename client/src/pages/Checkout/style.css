@@ -1,0 +1,10 @@
+.checkoutPage{
+    margin: 150px auto;
+    width: 65%;
+}
+@media (max-width: 1200px){
+    .checkoutPage{
+        margin:100px 0 0 30px ;
+        width: 100%;
+    }
+}

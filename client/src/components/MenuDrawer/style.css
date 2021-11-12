@@ -1,0 +1,77 @@
+.icon{
+    color: #ffc107;
+}
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    z-index: 4;
+  }
+  
+  .nav-links {
+    font-family: 'Consolas'; 
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+  }
+  .nav-links:hover{
+    text-decoration: none;
+      color: white;
+  }
+  @media  (min-width: 1024px) and (max-width: 1350px){
+    .nav-menu{
+      display: flex;
+      list-style: none;
+      text-align: center;
+      margin-top: 3rem;
+      z-index: 2;
+      margin-left: 1rem;
+    }
+  }
+  /* @media  (min-width: 1430px) and (max-width: 1500px){
+    .nav-menu{
+      margin-right: -1.5rem;
+    }
+  }
+  
+  @media  (min-width: 1300px) and (max-width: 1430px){
+    .nav-menu{
+      margin-right: -1.5rem;
+    }
+  }
+  @media  (min-width: 1150px) and (max-width: 1300px){
+    .nav-menu{
+      margin-right: -1.5rem;
+    }
+  } */
+  .nav-item {
+    line-height: 40px;
+    margin-right: 1rem;
+  }
+  
+  
+  .nav-item:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+  }
+  
+  .nav-item:hover:after {
+    width: 100%;
+    background: black;
+  }
+  
+  .nav-item .active {
+    color: white;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid black;
+  }
+  

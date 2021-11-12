@@ -1,0 +1,59 @@
+.gamesPage{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.gamesList{
+    margin: 20px 50px 0 150px;
+    width: 100%;
+}
+@media (min-width: 1921px){
+    .gamesList{
+        margin: 20px 150px 0 150px;
+    }
+}
+@media (min-width: 1800px) and (max-width: 1920px){
+    .gamesList{
+        margin: 20px 90px 0 140px;
+    }
+}
+@media (min-width: 1700px) and (max-width: 1800px){
+    .gamesList{
+        margin: 20px 90px 0 90px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1700px){
+    .gamesList{
+        margin: 20px 50px 0 50px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .gamesList{
+        margin: 20px 50px 0 50px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .gamesList{
+        margin: 20px 50px 0 50px;
+    }
+}
+@media (min-width: 420px) and (max-width: 540px){
+    .gamesList{
+        margin-left: 70px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 420px){
+    .gamesList{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 374px){
+    .gamesList{
+        margin-left: 10px;
+    }
+}
+
+.filters{
+    margin-top: 100px;
+}

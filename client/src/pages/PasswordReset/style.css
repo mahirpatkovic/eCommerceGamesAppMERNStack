@@ -1,0 +1,23 @@
+.passwordResetPage {
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 170px;
+    width: 30%;
+    /* display: grid;
+    place-items: center; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+@media (max-width: 1024px) {
+    .passwordResetPage {
+        margin-top: 100px;
+        width: 90%;
+    }
+}
+@media (max-width: 540px) {
+    .passwordResetPage {
+        margin-top: 70px;
+    }
+}

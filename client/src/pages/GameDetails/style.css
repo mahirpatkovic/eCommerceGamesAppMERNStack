@@ -1,0 +1,24 @@
+.gameSinglePage{
+    margin: 150px auto;    
+}
+@media (max-width: 1024px){
+    .gameSinglePage{
+        margin: 50px auto;
+    }
+}
+@media (min-width: 540px) and (max-width: 768px){
+    .gameSinglePage{
+        margin: 0px auto;
+    }
+}
+
+@media (max-width: 768px){
+    .gameTrailer{
+        width: 100%;
+    }
+}
+/* @media (max-width: 992px){
+    .commentSection{
+        margin-top: 10%;
+    }
+} */

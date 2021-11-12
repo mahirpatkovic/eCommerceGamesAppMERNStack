@@ -1,0 +1,9 @@
+.adminPage{
+    margin: 150px auto;
+    width: 90%;
+}
+@media (max-width: 1024px){
+    .adminPage{
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,26 @@
+.backToTopBtn{
+    cursor: pointer;
+    right: 50px;
+    position: fixed;
+    bottom: 30px;
+}
+.backToTopBtn img{
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 42px;
+}
+
+@media (max-width: 540px){
+    .backToTopBtn{
+        right: 18px;
+    }
+    .backToTopBtn img{
+        right: 10px;
+    }
+}
+
+.pageContainer{
+    position: relative;
+    min-height: 100vh;
+}

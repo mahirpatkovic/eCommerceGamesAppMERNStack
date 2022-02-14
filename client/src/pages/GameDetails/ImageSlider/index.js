@@ -8,17 +8,17 @@ export default function ImageSlider(props) {
     const [images, setImages] = useState([]);
     useEffect(() => {
         setImages(props.images);
-    }, []);
+    }, [props.images]);
 
     return (
-        <div className="imageSlider">
+        <div className='imageSlider'>
             <Carousel fade>
                 {images.map((image, index) => (
                     <Carousel.Item key={index}>
                         <img
-                            className="d-block w-100"
+                            className='d-block w-100'
                             src={image}
-                            alt="Slides"
+                            alt='Slides'
                         />
                     </Carousel.Item>
                 ))}

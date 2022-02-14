@@ -17,16 +17,6 @@ const commentRouter = require('./routes/commentRoutes');
 const paymentRouter = require('./routes/paymentRoutes');
 const app = express();
 
-const allowedOrigins = [
-    'http://localhost:3000',
-    'https://www.mocky.io/v2/5cc8019d300000980a055e76',
-];
-
-const options = (cors.CorsOptions = {
-    origin: allowedOrigins,
-});
-// Implement Cors
-app.use(cors(options));
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -39,7 +29,18 @@ app.use((req, res, next) => {
     next();
 });
 
-app.options('*', cors());
+
+app.use(
+    cors({
+        credentials: true,
+        origin:
+            process.env.NODE_ENV === 'production'
+                ? 'http://msgames.herokuapp.com'
+                : 'http://localhost:3000',
+    })
+);
+
+// app.options('*', cors());
 
 // serving static files
 app.use(express.static(path.join(__dirname, 'public')));
@@ -49,24 +50,24 @@ app.use(express.static(path.join(__dirname, 'public')));
 //     next();
 // });
 
-app.use(
-    contentSecurityPolicy({
-        useDefaults: true,
-        directives: {
-            defaultSrc: ["'self'"],
-            scriptSrc: [
-                "'self'",
-                'https://www.paypal.com',
-                'sha256-9Y44qF+1Rwj+2hgGsDeCkCPIpHrOBnzI31v0UCQYbfc=',
-                // `'nonce-${crypto.randomBytes(16).toString('hex')}'`,
-            ],
-            fontSrc: ["'self'", 'https://fonts.googleapis.com'],
-            objectSrc: ["'none'"],
-            upgradeInsecureRequests: [],
-        },
-        reportOnly: false,
-    })
-);
+// // app.use(
+// //     contentSecurityPolicy({
+// //         useDefaults: true,
+// //         directives: {
+// //             defaultSrc: ["'self'"],
+// //             scriptSrc: [
+// //                 "'self'",
+// //                 'https://www.paypal.com',
+// //                 'sha256-9Y44qF+1Rwj+2hgGsDeCkCPIpHrOBnzI31v0UCQYbfc=',
+// //                 // `'nonce-${crypto.randomBytes(16).toString('hex')}'`,
+// //             ],
+// //             fontSrc: ["'self'", 'https://fonts.googleapis.com'],
+// //             objectSrc: ["'none'"],
+// //             upgradeInsecureRequests: [],
+// //         },
+// //         reportOnly: false,
+// //     })
+// // );
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));

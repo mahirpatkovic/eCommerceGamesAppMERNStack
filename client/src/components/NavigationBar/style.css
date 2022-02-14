@@ -45,7 +45,7 @@
     cursor: pointer;
     flex-grow: 1;
     width: 60px;
-    margin-left: 15rem; /*production change */
+    margin-left: 10rem; /*production change */
 }
 @media (min-width: 1024px) and (max-width: 1350px) {
     .nav-logo {
@@ -54,7 +54,7 @@
     }
     .nav-logo2 {
         width: 50px;
-        margin-left: -5rem;
+        margin-left: 4rem;
     }
 }
 @media (min-width: 1350px) and (max-width: 1500px) {
